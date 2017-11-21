@@ -1,0 +1,9 @@
+# ref: https://circleci.com/docs/2.0/hello-world/
+version: 2
+jobs:
+   build:
+     docker:
+       - image: circleci/node:7 # from https://circleci.com/docs/2.0/circleci-images/
+     steps:
+       - checkout
+       - run: echo "hello world"
